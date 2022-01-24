@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../img/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+/* nav a:first-child{
+    color: red;
+} */
+nav ul li a:hover{
+    color: red;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;  
+    margin: 0px;
+    position: fixed;
+    top: 0;  
+}
+nav ul li{
+    list-style: none;
+    margin: -200px;
+}
+.logo{
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+.logo span{
+    color: red;
+}
+.icon i{
+    font-size: 20px;
+}
+.icon i:hover{
+    color:rgba(206, 18, 18, 0.678);
+}
+.icon a{
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.h-text{
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#camera{
+    font-size: 40px;
+    margin-bottom:10px;
+}
+.h-text h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+.h-text input{
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.h-text button{
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(211, 32, 32);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.gallery{
+    padding: 100px;
+}
+.pro-menu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pro-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+}
+.pro-menu ul li:hover{
+    color: white;
+    background-color: red;
+    border-radius: 8px;
+}
+li.active{
+    color: white;
+    background-color: red;
+    border-radius: 8px;  
+}
+.prot-item{
+    width: 100%;
+}
+.prot-item .item{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.prot-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.member{
+    width: 100%;
+    padding: 20px 100px;
+    font-family: sans-serif;
+}
+#member-img{
+    width: 20%;
+    height: 10%;
+    border-radius:50%;
+}
+.member-info{
+    text-align: center;
+}
+.member-info h1{
+    font-size: 2.5em;
+}
+.member-info h1 span{
+    color: tomato;
+}
+.member-card{
+    text-align: center;
+    padding-top: 50px;
+    width: 50%;
+    margin: auto;
+}
+.member-card p{
+    margin: 20px 0px;
+    line-height: 2em;
+}
+.member-card h2{
+    margin: 20px 0px;
+}
+
+.m-images{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+.m-images img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.m-images img:hover{
+    transform: scale(1.5);
+}
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    padding: 50px 100px ;
+}
+.newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    color:white;
+}
+.newsletter >div{
+    flex-basis: 50%;
+}
+.ntext{
+    text-align: right;
+}
+.newsletter h2{
+    font-size: 2em;
+    font-family:sans-serif;
+}
+.newsletter p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.newsletter label{
+    position: relative;
+}
+.newsletter input{
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+.newsletter button{
+    position: absolute;
+    margin-right:110px;
+    right: 0;
+    padding: 20px;
+    width: 200px;
+    background: #e74c3c;
+    color: white;
+    border-radius:  0 8px 8px 0;
+    border: none;
+    outline: none;
+}
